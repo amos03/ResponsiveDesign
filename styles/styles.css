@@ -4,6 +4,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
+
+@media only screen and (min-device-width: 411px)  {
+    
+}
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -17,7 +21,7 @@
       gap: 3px;
       background-color: white;
       text-align: center;
-      
+}
       
   }
 
@@ -55,4 +59,25 @@
     grid-area: footer;
     background-color: #355070;
   }
-  
+
+  @media only screen and (max-device-width: 411px) 
+  {
+    .grid-container {
+        display: block;
+        /* grid-template-columns: 100%; */
+        grid-template-rows: 0.2fr 0.2fr 3fr 2fr 2fr 2fr 1fr;
+        grid-template-areas: 
+          "navbar"
+          "sidebar"
+          "main"
+          "content1"
+          "content2"
+          "content3"
+          "footer";
+          /* height: 100vh; */
+          gap: 3px;
+          background-color: white;
+          text-align: center;
+    
+}
+}
