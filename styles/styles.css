@@ -63,9 +63,9 @@
   @media only screen and (max-device-width: 411px) 
   {
     .grid-container {
-        display: block;
-        /* grid-template-columns: 100%; */
-        grid-template-rows: 0.2fr 0.2fr 3fr 2fr 2fr 2fr 1fr;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 50px 500px 400px 300px 300px 200px;
         grid-template-areas: 
           "navbar"
           "sidebar"
@@ -74,7 +74,7 @@
           "content2"
           "content3"
           "footer";
-          /* height: 100vh; */
+           height: 100vh;
           gap: 3px;
           background-color: white;
           text-align: center;
